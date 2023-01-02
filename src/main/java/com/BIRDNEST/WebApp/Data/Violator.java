@@ -35,4 +35,16 @@ public class Violator {
         this.drone = drone;
         this.distance = Math.sqrt((drone().positionX()-250000)*(drone().positionX()-250000)+(drone().positionY()-250000)*(drone().positionY()-250000));
     }
+
+    @Override
+    public String toString(){
+        String firstName = this.pilot.firstName().toString();
+        String lastName = this.pilot.lastName().toString();
+        String email = this.pilot.email().toString();
+        String phoneNumber = this.pilot.phoneNumber().toString();
+        String positionX = String.valueOf(this.drone.positionX());
+        String positionY = String.valueOf(this.drone.positionY());
+        String time = this.time.toString();
+        return ("[" + firstName + " " + lastName + " " + email + " " + phoneNumber + " " + positionX + " " + positionY + " " + time + "]" );
+    }
 }
