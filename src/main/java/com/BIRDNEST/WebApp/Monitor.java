@@ -29,14 +29,16 @@ public class Monitor{
     public Map<String, Violator> addViolator() throws Exception {
         var report = this.client.getReport();
         var drones = report.capture().drones();
-        //Drone[] drones = getDrones();
         for (Drone drone : drones) {
             Violator violator;
             if (IsDroneInNDZ(drone.positionX(), drone.positionY())) {
                 if (this.violators.containsKey(drone.serialNumber())) {
                     violator = this.violators.get(drone.serialNumber());
-                    violator.UpdateDrone(drone);
-                    System.out.println("Update:" + violator.pilot().firstName());
+                    if (violator.getDistance() > drone.getDistance()) {
+                        System.out.println("Update:" + violator.getDistance() + "->" + drone.getDistance());
+                        violator.UpdateDrone(drone, report.capture());
+                    }
+                    System.out.println("Not Update:" + violator.getDistance() + "->" + drone.getDistance());
                 }
             } else {
                 var pilot = client.getPilot(drone.serialNumber());
@@ -46,13 +48,7 @@ public class Monitor{
         }
         System.out.println("---------");
         for (Map.Entry<String, Violator> entry : this.violators.entrySet()) {
-            System.out.print("[" + entry.getValue().pilot().firstName() + " ");
-            System.out.print(entry.getValue().pilot().lastName() + " ");
-            System.out.print(entry.getValue().pilot().email() + " ");
-            System.out.print(entry.getValue().pilot().phoneNumber() + " ");
-            System.out.print(entry.getValue().distance() + " ");
-            System.out.print(entry.getValue().time() + " ");
-            System.out.println("]");
+            System.out.println(entry.getValue().toString());
         }
         System.out.println("---------");
         return (this.violators);
