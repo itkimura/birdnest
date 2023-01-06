@@ -9,7 +9,7 @@ public class MonitorTests {
     @Test
     void InNDZ_WhenInZone_True(){
          var sut = new Monitor();
-         var actual = sut.IsDroneInNDZ(221073.75f, 132391.9f);
+         var actual = sut.IsDroneInNDZ(250000.00f, 250000.00f);
         Assert.isTrue(actual, "Should return true");
     }
 

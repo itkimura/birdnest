@@ -11,11 +11,11 @@ import org.springframework.web.servlet.ModelAndView;
 //@RestController
 public class Home {
     @Autowired
-    //private Monitor monitor;
     private Monitor monitor;
+
     @RequestMapping("/")
     public ModelAndView hello(ModelAndView mav, Model model) throws Exception{
-        var violators =  this.monitor.addViolator();
+        var violators =  this.monitor.getViolators();
         mav.addObject("violators", violators);
         mav.setViewName("home");
         return mav;

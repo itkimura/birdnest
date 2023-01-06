@@ -2,10 +2,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="2">
   <title>home</title>
   <link href="/home.css" rel="stylesheet"></link>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $('#violator').test(
+  </script>
 </head>
 <body>
 <h1>Violators</h1>
@@ -17,6 +22,7 @@
     <th>Phone</th>
     <th>Distance</th>
     <th>Time</th>
+    <th>Ago</th>
   </tr>
   </thead>
   <tbody>
@@ -26,6 +32,7 @@
     <td th:text="${violator.value.getPhone()}"></td>
     <td th:text="${violator.value.getDistance()}"></td>
     <td  th:text="${violator.value.getTime()}"></td>
+    <td  th:text="${violator.value.getAgo()}"></td>
   </tr>
   </tbody>
 </table>

@@ -31,7 +31,7 @@ table th{
 table td{
     padding: 10px;
     font-size: 12px;
-    border: solid 1px #C0C0C0;
+    border: solid 1px #1a1a1a;
     background-color: #080808;
 }
 
@@ -41,6 +41,6 @@ table td{
 }
 
 "blue = #55FDFF
-"green = #54D100
-"gray = #C0C0C0
-"while = #F6F7F8
+"dark gray = #080808
+"gray = #1a1a1a
+"white = #C0C0C0

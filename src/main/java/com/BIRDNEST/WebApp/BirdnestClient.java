@@ -9,7 +9,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class BirdnestClient {
+public class BirdnestClient implements IBirdnestClient {
     private final HttpClient client;
     private final XmlMapper xmlMapper;
     private final JsonMapper jsonMapper;
