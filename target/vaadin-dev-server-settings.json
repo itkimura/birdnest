@@ -1,0 +1,16 @@
+{
+  "frontendFolder": "/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/jar-resources",
+  "staticOutput": "/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/target/classes/META-INF/VAADIN/config",
+  "frontendBundleOutput": "/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/target/classes/META-INF/VAADIN/webapp",
+  "jarResourcesFolder": "/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/jar-resources",
+  "generatedFlowImportsFolder": "target/frontend",
+  "themeName": "birdnest",
+  "clientServiceWorkerSource": "/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/target/sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
