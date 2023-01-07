@@ -65,3 +65,8 @@ vaadin-scroller[slot="drawer"][overflow~="bottom"] {
 .navlink:hover {
   text-decoration: none;
 }
+
+
+.copyright {
+    text-align :center;
+}

@@ -12,8 +12,40 @@
     "name" : "HelloReactEndpoint",
     "description" : "",
     "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/endpoints/helloreact/HelloReactEndpoint.java"
+  }, {
+    "name" : "ViolatorEndpoint",
+    "description" : "",
+    "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/endpoints/ViolatorEndpoint.java"
   } ],
   "paths" : {
+    "/ViolatorEndpoint/getViolators" : {
+      "post" : {
+        "tags" : [ "ViolatorEndpoint" ],
+        "operationId" : "ViolatorEndpoint_getViolators_POST",
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "description" : "",
+                  "items" : {
+                    "nullable" : true,
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/com.birdnest.application.Data.Violator"
+                    } ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "vaadin-connect-oauth2" : [ ]
+        } ]
+      }
+    },
     "/HelloReactEndpoint/sayHello" : {
       "post" : {
         "tags" : [ "HelloReactEndpoint" ],
@@ -53,6 +85,121 @@
     }
   },
   "components" : {
+    "schemas" : {
+      "com.birdnest.application.Data.Violator" : {
+        "required" : [ "ago", "distance", "interval" ],
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "email" : {
+            "type" : "string"
+          },
+          "phone" : {
+            "type" : "string"
+          },
+          "distance" : {
+            "type" : "number"
+          },
+          "pilot" : {
+            "allOf" : [ {
+              "$ref" : "#/components/schemas/com.birdnest.application.Data.Pilot"
+            } ]
+          },
+          "drone" : {
+            "allOf" : [ {
+              "$ref" : "#/components/schemas/com.birdnest.application.Data.Drone"
+            } ]
+          },
+          "time" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "interval" : {
+            "type" : "number"
+          },
+          "ago" : {
+            "type" : "number"
+          },
+          "zone" : {
+            "type" : "object"
+          }
+        },
+        "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/Data/Violator.java"
+      },
+      "com.birdnest.application.Data.Drone" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/java.lang.Record"
+        }, {
+          "required" : [ "altitude", "positionX", "positionY" ],
+          "type" : "object",
+          "properties" : {
+            "serialNumber" : {
+              "type" : "string"
+            },
+            "model" : {
+              "type" : "string"
+            },
+            "manufacturer" : {
+              "type" : "string"
+            },
+            "mac" : {
+              "type" : "string"
+            },
+            "ipv4" : {
+              "type" : "string"
+            },
+            "ipv6" : {
+              "type" : "string"
+            },
+            "firmware" : {
+              "type" : "string"
+            },
+            "positionY" : {
+              "type" : "number"
+            },
+            "positionX" : {
+              "type" : "number"
+            },
+            "altitude" : {
+              "type" : "number"
+            }
+          }
+        } ]
+      },
+      "java.lang.Record" : {
+        "type" : "object",
+        "properties" : { }
+      },
+      "com.birdnest.application.Data.Pilot" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/java.lang.Record"
+        }, {
+          "type" : "object",
+          "properties" : {
+            "pilotId" : {
+              "type" : "string"
+            },
+            "firstName" : {
+              "type" : "string"
+            },
+            "lastName" : {
+              "type" : "string"
+            },
+            "phoneNumber" : {
+              "type" : "string"
+            },
+            "createdDt" : {
+              "type" : "string"
+            },
+            "email" : {
+              "type" : "string"
+            }
+          }
+        } ]
+      }
+    },
     "securitySchemes" : {
       "vaadin-connect-oauth2" : {
         "type" : "oauth2",

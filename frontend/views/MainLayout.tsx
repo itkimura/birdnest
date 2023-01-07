@@ -9,6 +9,7 @@ import views, { RequiredViewInfoMap } from './views.js';
 export default function MenuOnLeftLayout() {
   const { pathname } = useLocation();
   const currentTitle = views[pathname]?.title ?? 'Violators';
+  const themeMode = 'dark';
 
   return (
     <AppLayout className="block h-full" primarySection="drawer">
@@ -33,8 +34,10 @@ export default function MenuOnLeftLayout() {
       <h2 slot="navbar" className="text-l m-0">
         {currentTitle}
       </h2>
-
       <Outlet />
+    <div className={css.copyright}>
+        <small>© itkimura 2022</small>
+    </div>
     </AppLayout>
   );
 }
