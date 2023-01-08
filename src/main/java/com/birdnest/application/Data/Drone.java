@@ -10,10 +10,4 @@ public record Drone(String serialNumber,
                     float positionY,
                     float positionX,
                     float altitude) {
-    public double getDistance(){
-        var distance = Math.sqrt(
-                        (this.positionX()-250000)*(this.positionX()-250000)
-                        +(this.positionY()-250000)*(this.positionY()-250000));
-        return (distance);
-    }
 }

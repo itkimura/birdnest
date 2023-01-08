@@ -15,6 +15,5 @@ export default interface Violator {
   drone?: Drone;
   time?: string;
   interval: number;
-  ago: number;
   zone?: any;
 }

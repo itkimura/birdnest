@@ -48,10 +48,6 @@ export default class ViolatorModel<T extends Violator = Violator> extends Object
     return this[_getPropertyModel]('interval', NumberModel, [false]);
   }
 
-  get ago(): NumberModel {
-    return this[_getPropertyModel]('ago', NumberModel, [false]);
-  }
-
   get zone(): ObjectModel<unknown> {
     return this[_getPropertyModel]('zone', ObjectModel, [true]);
   }

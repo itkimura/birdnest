@@ -8,4 +8,5 @@ import Record from '../../../../java/lang/Record';
 export default interface ViolatorReport extends Record {
   violators?: Array<Violator | undefined>;
   lastUpdated: string;
+  moniteringStartDate: string;
 }

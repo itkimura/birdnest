@@ -10,14 +10,23 @@ public class MonitorTests {
     @Test
     void InNDZ_WhenInZone_True(){
         var sut = new Monitor();
-        var actual = sut.IsDroneInNDZ(250000.00f, 250000.00f);
+        var distance = 0;
+        var actual = sut.isDroneInNDZ(distance);
         Assert.isTrue(actual, "Should return true");
     }
 
     @Test
     void InNDZ_NotInZone_False(){
         var sut = new Monitor();
-        var actual = sut.IsDroneInNDZ(400000f, 250000f);
+        var distance = 450000;
+        var actual = sut.isDroneInNDZ(distance);
         Assert.isTrue(!actual, "Should return false");
+    }
+
+    @Test
+    void calucurateDistance (){
+        var sut = new Monitor();
+        var distance = sut.calucurateDistance(250000.00f, 250000.00f);
+        Assert.isTrue((0 == distance), "Should return 0");
     }
 }

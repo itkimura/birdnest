@@ -83,7 +83,7 @@
         "allOf" : [ {
           "$ref" : "#/components/schemas/java.lang.Record"
         }, {
-          "required" : [ "lastUpdated" ],
+          "required" : [ "lastUpdated", "moniteringStartDate" ],
           "type" : "object",
           "properties" : {
             "violators" : {
@@ -98,12 +98,16 @@
             "lastUpdated" : {
               "type" : "string",
               "format" : "date-time"
+            },
+            "moniteringStartDate" : {
+              "type" : "string",
+              "format" : "date-time"
             }
           }
         } ]
       },
       "com.birdnest.application.data.Violator" : {
-        "required" : [ "ago", "distance", "interval" ],
+        "required" : [ "distance", "interval" ],
         "type" : "object",
         "properties" : {
           "name" : {
@@ -133,9 +137,6 @@
             "format" : "date-time"
           },
           "interval" : {
-            "type" : "number"
-          },
-          "ago" : {
             "type" : "number"
           },
           "zone" : {

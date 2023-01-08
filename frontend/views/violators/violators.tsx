@@ -13,23 +13,25 @@ import { TextField } from '@hilla/react-components/TextField.js'
 
 export default function Violators(){
   const [violators, setViolators] = useState(Array<Violator | any>);
-  const [violatorReport, setViolatorReport] = useState<ViolatorReport>({ violators: [], lastUpdated: '1970-1-1'});
+  const [violatorReport, setViolatorReport] = useState<ViolatorReport>({ violators: [], lastUpdated: '1970-1-1', moniteringStartDate: '1970-1-1'});
+  const [detailsOpenedItem, setDetailsOpenedItem] = useState(Array<Violator | any>);
   useEffect(() =>
   {
     (async () =>{
         let initial = await ViolatorEndpoint.getViolatorReport();
         setViolatorReport(initial);
         setInterval(async () => {
+            setDetailsOpenedItem([]);
             setViolatorReport(await ViolatorEndpoint.getViolatorReport());
         }, 20000);
     })();
 return () => { };
   }, []);
-  const [detailsOpenedItem, setDetailsOpenedItem] = useState(Array<Violator | any>);
   return (
     <VerticalLayout>
         <div className={'lastUpdated'}>
-            <span>Last updated: {getLocalDate(violatorReport.lastUpdated)}</span><br />
+            <span>Monitering started time: <span className={'bold'}>{getLocalDate(violatorReport.moniteringStartDate)}</span></span><br />
+            <span>Last updated: <span className={'bold'}>{getLocalDate(violatorReport.lastUpdated)}</span></span><br />
             <small>*The list will be automatically renewed every one minute. Please click to see violator details in the list.</small>
         </div>
 
@@ -50,7 +52,7 @@ return () => { };
                       <TextField label='Manufacturer' value={item.drone.manufacturer} readonly/>
                       <TextField label='Mac' value={item.drone.mac} readonly/>
                     </HorizontalLayout>
-                    <p>Last violated: {item.ago} minutes ago</p>
+                    <p>Last seen: {(item.interval / 60000).toFixed(0)} minutes ago</p>
                   </VerticalLayout>
               }
          >
@@ -67,6 +69,7 @@ return () => { };
            />
            <GridSortColumn path = 'phone' flex-grow="0.5" />
            <GridSortColumn path = 'distance' flex-grow="0.5"
+              header="Closest confirmed distance"
               renderer={
               ({ item }) =>
                    <span>
@@ -74,7 +77,7 @@ return () => { };
                    </span>
               }
            />
-           <GridSortColumn path = 'time' header="Last violated"
+           <GridSortColumn path = 'time' header="Last seen"
                renderer={
                ({ item }) =>
                <span>

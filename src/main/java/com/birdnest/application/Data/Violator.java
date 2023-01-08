@@ -20,21 +20,19 @@ public class Violator {
     private LocalDateTime time;
 
     long interval;
-    int ago;
     ZoneId zone;
 
 
-    public Violator(Pilot pilot, Drone drone, Capture capture){
+    public Violator(Pilot pilot, Drone drone, Capture capture, double distance){
         this.zone = ZoneId.of("UTC");
         this.name = pilot.firstName() + " " + pilot.lastName();
         this.email = pilot.email();
         this.phone = pilot.phoneNumber();
-        this.distance = drone.getDistance();
+        this.distance = distance;
         this.time = capture.snapshotTimestamp();
-        this.interval = (dateToLong(LocalDateTime.now(zone)) - dateToLong(capture.snapshotTimestamp()))/ (1000 * 60 *60 * 24);
-        this.ago = (int) (interval / 60000);
         this.pilot = pilot;
         this.drone = drone;
+        setInterval();
     }
 
     public Long dateToLong(LocalDateTime localDateTime) {
@@ -43,15 +41,18 @@ public class Violator {
         return (date);
     }
 
-    public void updateInterval(){
-        this.interval = (dateToLong(LocalDateTime.now(zone)) - dateToLong(this.time));
-        this.ago = (int) (interval / 60000);
+    public void setInterval(){
+        this.interval = dateToLong(LocalDateTime.now(zone))- dateToLong(this.time);
     }
 
-    public void updateDrone(Drone drone, Capture capture){
-        this.drone = drone;
-        this.distance = drone.getDistance();
+    public void updateTime(Capture capture){
         this.time = capture.snapshotTimestamp();
+        setInterval();
+    }
+
+    public void updateDrone(Drone drone, double distance){
+        this.drone = drone;
+        this.distance = distance;
     }
 
     @Override
@@ -60,6 +61,7 @@ public class Violator {
                 + this.name + " "
                 + this.email + " "
                 + this.phone + " "
+                + this.interval + " "
                 + String.valueOf(this.distance) +"]" );
     }
 }

@@ -22,4 +22,8 @@ export default class ViolatorReportModel<T extends ViolatorReport = ViolatorRepo
   get lastUpdated(): StringModel {
     return this[_getPropertyModel]('lastUpdated', StringModel, [false]);
   }
+
+  get moniteringStartDate(): StringModel {
+    return this[_getPropertyModel]('moniteringStartDate', StringModel, [false]);
+  }
 }
