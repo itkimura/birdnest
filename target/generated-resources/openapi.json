@@ -83,7 +83,7 @@
         "allOf" : [ {
           "$ref" : "#/components/schemas/java.lang.Record"
         }, {
-          "required" : [ "lastUpdated", "moniteringStartDate" ],
+          "required" : [ "lastUpdated", "monitoringStartDate" ],
           "type" : "object",
           "properties" : {
             "violators" : {
@@ -99,7 +99,7 @@
               "type" : "string",
               "format" : "date-time"
             },
-            "moniteringStartDate" : {
+            "monitoringStartDate" : {
               "type" : "string",
               "format" : "date-time"
             }

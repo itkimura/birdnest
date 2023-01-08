@@ -13,7 +13,7 @@ import { TextField } from '@hilla/react-components/TextField.js'
 
 export default function Violators(){
   const [violators, setViolators] = useState(Array<Violator | any>);
-  const [violatorReport, setViolatorReport] = useState<ViolatorReport>({ violators: [], lastUpdated: '1970-1-1', moniteringStartDate: '1970-1-1'});
+  const [violatorReport, setViolatorReport] = useState<ViolatorReport>({ violators: [], lastUpdated: '1970-1-1', monitoringStartDate: '1970-1-1'});
   const [detailsOpenedItem, setDetailsOpenedItem] = useState(Array<Violator | any>);
   useEffect(() =>
   {
@@ -23,20 +23,14 @@ export default function Violators(){
         setInterval(async () => {
             setDetailsOpenedItem([]);
             setViolatorReport(await ViolatorEndpoint.getViolatorReport());
-        }, 20000);
+        }, 60000);
     })();
 return () => { };
   }, []);
   return (
-    <VerticalLayout>
-        <div className={'lastUpdated'}>
-            <span>Monitering started time: <span className={'bold'}>{getLocalDate(violatorReport.moniteringStartDate)}</span></span><br />
-            <span>Last updated: <span className={'bold'}>{getLocalDate(violatorReport.lastUpdated)}</span></span><br />
-            <small>*The list will be automatically renewed every one minute. Please click to see violator details in the list.</small>
-        </div>
-
-         <Grid items={violatorReport.violators} theme='wrap-cell-content row-stripes'
-          all-rows-visible
+    <VerticalLayout className={'violatorList'}>
+         <Grid  items={violatorReport.violators} theme='wrap-cell-content row-stripes'
+          //all-rows-visible
           detailsOpenedItems={detailsOpenedItem}
           onActiveItemChanged={({ detail: { value } }) => setDetailsOpenedItem([value])}
               rowDetailsRenderer={({ item } ) =>
@@ -86,6 +80,11 @@ return () => { };
                }
            />
         </Grid>
+        <div className={'violatorFooter'}>
+            <small className={'time'}>Monitoring stated date: {getLocalDate(violatorReport.monitoringStartDate)}</small>
+            <small className={'time'}>Last updated: {getLocalDate(violatorReport.lastUpdated)}</small>
+            <p><small>*The list will be automatically renewed every one minute. Please click to see violator details in the list.</small></p>
+        </div>
     </VerticalLayout>
     );
   }

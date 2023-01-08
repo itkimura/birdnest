@@ -7,5 +7,5 @@ import java.time.LocalDateTime;
 
 public record ViolatorReport(@Nonnull Violator[] violators,
                              @Nonnull LocalDateTime lastUpdated,
-                             @Nonnull LocalDateTime moniteringStartDate){
+                             @Nonnull LocalDateTime monitoringStartDate){
 }

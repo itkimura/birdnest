@@ -7,7 +7,19 @@
 .bold{
     font-weight: bold;
 }
+.violatorList{
+    height: 95%;
+}
 
-.lastUpdated{
-    padding: 1vw;
+.violatorFooter{
+    padding: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.time {
+  background-color: var(--lumo-contrast-20pct);
+  padding: 0.5vw 1vw 0.5vw 1vw;
+  margin: 1vw 1vw 0vw 0vw;
+  border-radius: 100vh;
+  font-size:var(--lumo-font-size-s);
 }

@@ -23,7 +23,7 @@ export default class ViolatorReportModel<T extends ViolatorReport = ViolatorRepo
     return this[_getPropertyModel]('lastUpdated', StringModel, [false]);
   }
 
-  get moniteringStartDate(): StringModel {
-    return this[_getPropertyModel]('moniteringStartDate', StringModel, [false]);
+  get monitoringStartDate(): StringModel {
+    return this[_getPropertyModel]('monitoringStartDate', StringModel, [false]);
   }
 }
