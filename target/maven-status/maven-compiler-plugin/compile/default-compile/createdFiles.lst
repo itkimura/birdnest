@@ -9,4 +9,5 @@ com/birdnest/application/Data/Violator.class
 com/birdnest/application/IBirdnestClient.class
 com/birdnest/application/Monitor.class
 com/birdnest/application/Data/Capture.class
+com/birdnest/application/Data/ViolatorReport.class
 com/birdnest/application/Data/Pilot.class

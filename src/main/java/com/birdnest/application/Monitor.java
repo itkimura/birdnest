@@ -1,10 +1,14 @@
 package com.birdnest.application;
 
-import com.birdnest.application.Data.Drone;
-import com.birdnest.application.Data.Violator;
+import com.birdnest.application.data.Drone;
+import com.birdnest.application.data.Violator;
+import com.birdnest.application.data.ViolatorReport;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -15,6 +19,8 @@ public class Monitor{
     private IBirdnestClient client;
     //@Value("${violators}")
     private ConcurrentMap<String, Violator> violators;
+    LocalDateTime captureTime;
+
 
     public Monitor(){
         this.client = new BirdnestClient();
@@ -22,9 +28,9 @@ public class Monitor{
     }
 
     public boolean IsDroneInNDZ(Float positionX, Float positionY) {
-        var distance = Math.sqrt((positionX-250000)*(positionX-250000)+(positionY-250000)*(positionY-250000));
-        System.out.println("Distance:" + distance);
-        if (distance > 100000f)
+        var distance = Math.sqrt(((positionX-250000)*(positionX-250000))+((positionY-250000)*(positionY-250000)));
+        System.out.println("Distance: " + distance);
+        if (distance > 100000)
             return (false);
         return (true);
     }
@@ -45,23 +51,26 @@ public class Monitor{
             if (IsDroneInNDZ(drone.positionX(), drone.positionY())) {
                 if (this.violators.containsKey(drone.serialNumber())) {
                     violator = this.violators.get(drone.serialNumber());
-                    if (violator.getDistance() > drone.getDistance()) {
-                        System.out.println("Update:" + violator.getDistance() + "->" + drone.getDistance());
+                    if (violator.getDistance() > drone.getDistance())
                         violator.updateDrone(drone, report.capture());
-                    }
-                    System.out.println("Not Update:" + violator.getDistance() + "->" + drone.getDistance());
+                } else {
+                    var pilot = client.getPilot(drone.serialNumber());
+                    violator = new Violator(pilot, drone, report.capture());
+                    this.violators.put(drone.serialNumber(), violator);
                 }
-            } else {
-                var pilot = client.getPilot(drone.serialNumber());
-                violator = new Violator(pilot, drone, report.capture());
-                this.violators.put(drone.serialNumber(), violator);
             }
         }
-
+        this.captureTime = report.capture().snapshotTimestamp();
         removeExpired();
     }
 
     public Map<String, Violator> getViolators(){
         return (this.violators);
+    }
+
+    public ViolatorReport getViolatorReport(){
+        var array = this.violators.values().toArray(new Violator[this.violators.size()]);
+        var violatorReport = new ViolatorReport(array, this.captureTime);
+        return (violatorReport);
     }
 }

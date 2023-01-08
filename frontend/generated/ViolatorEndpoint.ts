@@ -10,14 +10,14 @@ import client from './connect-client.default';
 // @ts-ignore
 import { EndpointRequestInit, Subscription } from '@hilla/frontend';
 
-import type Violator from './com/birdnest/application/Data/Violator';
+import type ViolatorReport from './com/birdnest/application/data/ViolatorReport';
 
-function _getViolators(
+function _getViolatorReport(
  __init?: EndpointRequestInit
-): Promise<Array<Violator | undefined>>
+): Promise<ViolatorReport>
 {
- return client.call('ViolatorEndpoint', 'getViolators', {}, __init);
+ return client.call('ViolatorEndpoint', 'getViolatorReport', {}, __init);
 }
 export {
-  _getViolators as getViolators,
+  _getViolatorReport as getViolatorReport,
 };

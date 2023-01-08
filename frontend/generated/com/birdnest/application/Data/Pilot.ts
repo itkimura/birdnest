@@ -1,7 +1,7 @@
 import Record from '../../../../java/lang/Record';
 
 /**
- * This module is generated from com.birdnest.application.Data.Pilot.
+ * This module is generated from com.birdnest.application.data.Pilot.
  * All changes to this file are overridden. Please consider to make changes in the corresponding Java file if necessary.
  */
 export default interface Pilot extends Record {

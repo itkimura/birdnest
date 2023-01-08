@@ -9,33 +9,26 @@
     "description" : "Vaadin backend"
   } ],
   "tags" : [ {
-    "name" : "HelloReactEndpoint",
-    "description" : "",
-    "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/endpoints/helloreact/HelloReactEndpoint.java"
-  }, {
     "name" : "ViolatorEndpoint",
     "description" : "",
     "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/endpoints/ViolatorEndpoint.java"
+  }, {
+    "name" : "HelloReactEndpoint",
+    "description" : "",
+    "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/endpoints/helloreact/HelloReactEndpoint.java"
   } ],
   "paths" : {
-    "/ViolatorEndpoint/getViolators" : {
+    "/ViolatorEndpoint/getViolatorReport" : {
       "post" : {
         "tags" : [ "ViolatorEndpoint" ],
-        "operationId" : "ViolatorEndpoint_getViolators_POST",
+        "operationId" : "ViolatorEndpoint_getViolatorReport_POST",
         "responses" : {
           "200" : {
             "description" : "",
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "description" : "",
-                  "items" : {
-                    "nullable" : true,
-                    "allOf" : [ {
-                      "$ref" : "#/components/schemas/com.birdnest.application.Data.Violator"
-                    } ]
-                  }
+                  "$ref" : "#/components/schemas/com.birdnest.application.data.ViolatorReport"
                 }
               }
             }
@@ -86,7 +79,30 @@
   },
   "components" : {
     "schemas" : {
-      "com.birdnest.application.Data.Violator" : {
+      "com.birdnest.application.data.ViolatorReport" : {
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/java.lang.Record"
+        }, {
+          "required" : [ "lastUpdated" ],
+          "type" : "object",
+          "properties" : {
+            "violators" : {
+              "type" : "array",
+              "items" : {
+                "nullable" : true,
+                "allOf" : [ {
+                  "$ref" : "#/components/schemas/com.birdnest.application.data.Violator"
+                } ]
+              }
+            },
+            "lastUpdated" : {
+              "type" : "string",
+              "format" : "date-time"
+            }
+          }
+        } ]
+      },
+      "com.birdnest.application.data.Violator" : {
         "required" : [ "ago", "distance", "interval" ],
         "type" : "object",
         "properties" : {
@@ -104,12 +120,12 @@
           },
           "pilot" : {
             "allOf" : [ {
-              "$ref" : "#/components/schemas/com.birdnest.application.Data.Pilot"
+              "$ref" : "#/components/schemas/com.birdnest.application.data.Pilot"
             } ]
           },
           "drone" : {
             "allOf" : [ {
-              "$ref" : "#/components/schemas/com.birdnest.application.Data.Drone"
+              "$ref" : "#/components/schemas/com.birdnest.application.data.Drone"
             } ]
           },
           "time" : {
@@ -126,9 +142,9 @@
             "type" : "object"
           }
         },
-        "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/Data/Violator.java"
+        "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/data/Violator.java"
       },
-      "com.birdnest.application.Data.Drone" : {
+      "com.birdnest.application.data.Drone" : {
         "allOf" : [ {
           "$ref" : "#/components/schemas/java.lang.Record"
         }, {
@@ -172,7 +188,7 @@
         "type" : "object",
         "properties" : { }
       },
-      "com.birdnest.application.Data.Pilot" : {
+      "com.birdnest.application.data.Pilot" : {
         "allOf" : [ {
           "$ref" : "#/components/schemas/java.lang.Record"
         }, {

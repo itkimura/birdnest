@@ -1,6 +1,6 @@
 package com.birdnest.application;
 
-import com.birdnest.application.Data.*;
+import com.birdnest.application.data.*;
 
 public interface IBirdnestClient {
     Report getReport() throws Exception;

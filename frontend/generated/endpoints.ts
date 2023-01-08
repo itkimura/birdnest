@@ -1,7 +1,7 @@
-import * as HelloReactEndpoint from "./HelloReactEndpoint";
 import * as ViolatorEndpoint from "./ViolatorEndpoint";
+import * as HelloReactEndpoint from "./HelloReactEndpoint";
 
 export {
-  HelloReactEndpoint,
-  ViolatorEndpoint
+  ViolatorEndpoint,
+  HelloReactEndpoint
 };

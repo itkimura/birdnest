@@ -35,9 +35,9 @@ export default function MenuOnLeftLayout() {
         {currentTitle}
       </h2>
       <Outlet />
-    <div className={css.copyright}>
-        <small>© itkimura 2022</small>
-    </div>
+      <div className={css.copyright}>
+            <small>© itkimura 2022</small>
+      </div>
     </AppLayout>
   );
 }

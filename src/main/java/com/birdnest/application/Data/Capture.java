@@ -1,4 +1,4 @@
-package com.birdnest.application.Data;
+package com.birdnest.application.data;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;

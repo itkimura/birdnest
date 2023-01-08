@@ -1,4 +1,4 @@
-package com.birdnest.application.Data;
+package com.birdnest.application.data;
 
 public record Pilot(String pilotId,
                     String firstName,

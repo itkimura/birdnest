@@ -9,9 +9,9 @@ import {ObjectModel,StringModel,NumberModel,ArrayModel,BooleanModel,Required,Mod
 import {Email,Null,NotNull,NotEmpty,NotBlank,AssertTrue,AssertFalse,Negative,NegativeOrZero,Positive,PositiveOrZero,Size,Past,Future,Digits,Min,Max,Pattern,DecimalMin,DecimalMax} from '@hilla/form';
 
 /**
- * This module is generated from com.birdnest.application.Data.Violator.
+ * This module is generated from com.birdnest.application.data.Violator.
  * All changes to this file are overridden. Please consider to make changes in the corresponding Java file if necessary.
- * @see {@link file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/Data/Violator.java}
+ * @see {@link file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/data/Violator.java}
  */
 export default class ViolatorModel<T extends Violator = Violator> extends ObjectModel<T> { 
   declare static createEmptyValue: () => Violator;

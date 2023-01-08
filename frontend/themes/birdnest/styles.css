@@ -1,21 +1,13 @@
 @import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
 
-vaadin-grid{
-    height: 90%;
-}
-
 .email{
     font-size: var(--lumo-font-size-s);
 }
 
-
-.name{
+.bold{
     font-weight: bold;
 }
 
-/*
-vaadin-grid tbody{
-    height: 90%;
-    line-height: 10vw;
+.lastUpdated{
+    padding: 1vw;
 }
-*/

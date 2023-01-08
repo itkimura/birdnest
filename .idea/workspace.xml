@@ -52,7 +52,20 @@
       <recent name="$PROJECT_DIR$/frontend/views" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.birdnest.application.Application" />
+      <module name="birdnest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.birdnest.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in birdnest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="birdnest" />
       <option name="PACKAGE_NAME" value="" />
@@ -64,6 +77,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MonitorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="birdnest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.birdnest.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.birdnest.application" />
+      <option name="MAIN_CLASS_NAME" value="com.birdnest.application.MonitorTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonitorTests.InNDZ_WhenInZone_True" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="birdnest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.birdnest.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.birdnest.application" />
+      <option name="MAIN_CLASS_NAME" value="com.birdnest.application.MonitorTests" />
+      <option name="METHOD_NAME" value="InNDZ_WhenInZone_True" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+      <item itemvalue="JUnit.All in birdnest" />
+      <item itemvalue="JUnit.MonitorTests" />
+      <item itemvalue="JUnit.MonitorTests.InNDZ_WhenInZone_True" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.MonitorTests.InNDZ_WhenInZone_True" />
+        <item itemvalue="JUnit.MonitorTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -1,7 +1,7 @@
 import Record from '../../../../java/lang/Record';
 
 /**
- * This module is generated from com.birdnest.application.Data.Drone.
+ * This module is generated from com.birdnest.application.data.Drone.
  * All changes to this file are overridden. Please consider to make changes in the corresponding Java file if necessary.
  */
 export default interface Drone extends Record {

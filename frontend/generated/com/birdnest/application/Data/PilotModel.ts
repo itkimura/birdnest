@@ -8,7 +8,7 @@ import {ObjectModel,StringModel,NumberModel,ArrayModel,BooleanModel,Required,Mod
 import {Email,Null,NotNull,NotEmpty,NotBlank,AssertTrue,AssertFalse,Negative,NegativeOrZero,Positive,PositiveOrZero,Size,Past,Future,Digits,Min,Max,Pattern,DecimalMin,DecimalMax} from '@hilla/form';
 
 /**
- * This module is generated from com.birdnest.application.Data.Pilot.
+ * This module is generated from com.birdnest.application.data.Pilot.
  * All changes to this file are overridden. Please consider to make changes in the corresponding Java file if necessary.
  */
 export default class PilotModel<T extends Pilot = Pilot> extends RecordModel<T> {
