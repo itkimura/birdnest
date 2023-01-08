@@ -70,7 +70,7 @@ vaadin-scroller[slot="drawer"][overflow~="bottom"] {
     text-align: right;
 }
 .copyright {
-    padding:2vw;
+    padding-top:1vw;
     text-align :center;
 }
 

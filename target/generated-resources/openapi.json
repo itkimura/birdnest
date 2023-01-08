@@ -9,13 +9,13 @@
     "description" : "Vaadin backend"
   } ],
   "tags" : [ {
-    "name" : "ViolatorEndpoint",
-    "description" : "",
-    "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/endpoints/ViolatorEndpoint.java"
-  }, {
     "name" : "HelloReactEndpoint",
     "description" : "",
     "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/endpoints/helloreact/HelloReactEndpoint.java"
+  }, {
+    "name" : "ViolatorEndpoint",
+    "description" : "",
+    "x-vaadin-file-path" : "file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/endpoints/ViolatorEndpoint.java"
   } ],
   "paths" : {
     "/ViolatorEndpoint/getViolatorReport" : {
