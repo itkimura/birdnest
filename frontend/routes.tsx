@@ -1,4 +1,3 @@
-import HelloReactView from 'Frontend/views/helloreact/HelloReactView.js';
 import Violators from 'Frontend/views/violators/violators.js';
 import MainLayout from 'Frontend/views/MainLayout.js';
 import { lazy, Suspense } from 'react';
@@ -10,8 +9,6 @@ const router = createBrowserRouter([
   {
     element: <MainLayout />,
     children: [
-      //{ path: '/', element: <HelloReactView /> },
-      //{ path: '/hello', element: <HelloReactView /> },
       { path: '/', element: <Violators /> },
       { path: '/violators', element: <Violators /> },
       {

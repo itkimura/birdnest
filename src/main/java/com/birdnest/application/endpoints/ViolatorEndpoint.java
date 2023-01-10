@@ -19,26 +19,8 @@ public class ViolatorEndpoint {
     @Autowired
     private Monitor monitor;
 
-    /*
-    public @Nonnull List<Violator> getViolators() {
-        var violators =  this.monitor.getViolators();
-        System.out.println("----Map-----");
-        for (Map.Entry<String, Violator> entry : violators.entrySet()) {
-            System.out.println(entry.getValue().toString());
-        }
-        List<Violator> list = new ArrayList<>();
-        for (Map.Entry<String, Violator> entry : violators.entrySet())
-            list.add(entry.getValue());
-        return (list);
-    }
-    */
     public @Nonnull ViolatorReport getViolatorReport() {
         var violatorReport =  this.monitor.getViolatorReport();
-        /*
-        for (Violator entry : violatorReport.violators())
-            System.out.println(entry);
-
-         */
         return (violatorReport);
     }
 }

@@ -75,21 +75,21 @@ return () => { };
                renderer={
                ({ item }) =>
                <span>
-                   {getLocalDate(item.time)}
+                   {getLocaleDate(item.time)}
                </span>
                }
            />
         </Grid>
         <div className={'violatorFooter'}>
-            <small className={'time'}>Monitoring stated date: {getLocalDate(violatorReport.monitoringStartDate)}</small>
-            <small className={'time'}>Last updated: {getLocalDate(violatorReport.lastUpdated)}</small>
-            <p><small>*The list will be automatically renewed every one minute. Please click to see violator details in the list.</small></p>
+            <small className={'time'}>Monitoring stated date: {getLocaleDate(violatorReport.monitoringStartDate)}</small>
+            <small className={'time'}>Last updated: {getLocaleDate(violatorReport.lastUpdated)}</small>
+            <p><small>*The list will be automatically renewed every one minute. Please click to see violator details in the list. Time zone is UTC.</small></p>
         </div>
     </VerticalLayout>
     );
   }
 
-  function getLocalDate(dateStr: string) {
+  function getLocaleDate(dateStr: string) {
     let d = new Date(dateStr);
     return d.toLocaleString(navigator.language);
   }

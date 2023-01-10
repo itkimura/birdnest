@@ -1,9 +1,8 @@
 package com.birdnest.application;
 
-import com.birdnest.application.data.Capture;
-import com.birdnest.application.data.Drone;
-import com.birdnest.application.data.Violator;
-import com.birdnest.application.data.ViolatorReport;
+import com.birdnest.application.data.*;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
@@ -20,16 +19,20 @@ public class Monitor{
     private ConcurrentMap<String, Violator> violators;
     private final LocalDateTime moniteringStartTime;
     LocalDateTime captureTime;
+    private Pilot noPilot;
     private final Integer birdPositionX;
     private final  Integer birdPositionY;
     private final  Integer expireViolatorAfterMS;
     private final Integer inNDZ;
+    private Log log = LogFactory.getLog(Monitor.class);
 
 
     public Monitor(){
         this.client = new BirdnestClientImpl();
         this.violators = new ConcurrentHashMap<String, Violator>();
         this.moniteringStartTime = LocalDateTime.now(ZoneId.of("UTC"));
+        this.noPilot = new Pilot("Not Available", "Not Available", "Not Available",
+                "Not Available", "Not Available", "Not Available");
         this.birdPositionX = 250000;
         this.birdPositionY = 250000;
         this.expireViolatorAfterMS = 600000;
@@ -49,14 +52,16 @@ public class Monitor{
     }
 
     public void removeExpired() {
-        for (Map.Entry<String, Violator> entry : this.violators.entrySet()) {
+        for (Map.Entry<String, Violator> entry : this.violators.entrySet())
+        {
             entry.getValue().setInterval();
             if (entry.getValue().getInterval() >= expireViolatorAfterMS)
                 this.violators.remove(entry.getKey());
         }
     }
     public void addViolator(Capture capture) throws Exception {
-        for (Drone drone : capture.drones()) {
+        for (Drone drone : capture.drones())
+        {
             Violator violator;
             double distance = calucurateDistance(drone.positionX(), drone.positionY());
             if (this.violators.containsKey(drone.serialNumber()))
@@ -70,23 +75,31 @@ public class Monitor{
             else if (isDroneInNDZ(distance))
             {
                 var pilot = client.getPilot(drone.serialNumber());
+                if (pilot == null)
+                {
+                    pilot = this.noPilot;
+                    this.log.warn("Cannot get pilot information for " + drone.serialNumber());
+                }
                 violator = new Violator(pilot, drone, capture, distance);
                 this.violators.put(drone.serialNumber(), violator);
             }
         }
-        printViolators();
     }
 
     @Scheduled(fixedRate = 2000)
     public void updateViolators() throws Exception{
-        var report = this.client.getReport();
-        addViolator(report.capture());
-        this.captureTime = report.capture().snapshotTimestamp();
+        try
+        {
+            var report = this.client.getReport();
+            this.log.info("Received report: " + report);
+            addViolator(report.capture());
+            this.captureTime = report.capture().snapshotTimestamp();
+        }
+        catch (Exception ex)
+        {
+           this.log.error("getReport request faild", ex);
+        }
         removeExpired();
-    }
-
-    public Map<String, Violator> getViolators(){
-        return (this.violators);
     }
 
     public void printViolators(){
