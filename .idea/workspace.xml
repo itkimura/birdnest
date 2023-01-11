@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8f381e8-1de6-4181-87be-d222251ae2fd" name="Changes" comment="" />
+    <list default="true" id="a8f381e8-1de6-4181-87be-d222251ae2fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_6_0_3_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/birdnest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/birdnest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/generated/HelloReactEndpoint.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/generated/endpoints.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/generated/endpoints.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/violators/violators.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/violators/violators.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/birdnest/application/BirdnestClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/birdnest/application/BirdnestClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/birdnest/application/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/birdnest/application/Monitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/birdnest/application/MonitorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/birdnest/application/MonitorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-resources/openapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-resources/openapi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/birdnest/application/MonitorTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/birdnest/application/MonitorTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,33 +53,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/themes/birdnest/views" />
       <recent name="$PROJECT_DIR$/frontend/views" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.birdnest.application.Application" />
-      <module name="birdnest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.birdnest.application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateTimeandDistance">
     <configuration name="All in birdnest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="birdnest" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonitorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonitorTests.AddNewViolator_WhenGetPilot_AddPilot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="birdnest" />
       <extension name="coverage">
         <pattern>
@@ -87,12 +88,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.birdnest.application" />
       <option name="MAIN_CLASS_NAME" value="com.birdnest.application.MonitorTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="AddNewViolator_WhenGetPilot_AddPilot" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonitorTests.InNDZ_WhenInZone_True" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonitorTests.RemoveExpired_WhenTimeIsOverTen_RemoveViolator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="birdnest" />
       <extension name="coverage">
         <pattern>
@@ -102,23 +104,75 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.birdnest.application" />
       <option name="MAIN_CLASS_NAME" value="com.birdnest.application.MonitorTests" />
-      <option name="METHOD_NAME" value="InNDZ_WhenInZone_True" />
+      <option name="METHOD_NAME" value="RemoveExpired_WhenTimeIsOverTen_RemoveViolator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="birdnest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.birdnest.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.birdnest.application" />
+      <option name="MAIN_CLASS_NAME" value="com.birdnest.application.MonitorTests" />
+      <option name="METHOD_NAME" value="UpdateViolator_WhenViolatorSeenAgain_UpdateDistance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="birdnest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.birdnest.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.birdnest.application" />
+      <option name="MAIN_CLASS_NAME" value="com.birdnest.application.MonitorTests" />
+      <option name="METHOD_NAME" value="UpdateViolator_WhenViolatorSeenAgain_UpdateTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateTimeandDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="birdnest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.birdnest.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.birdnest.application" />
+      <option name="MAIN_CLASS_NAME" value="com.birdnest.application.MonitorTests" />
+      <option name="METHOD_NAME" value="UpdateViolator_WhenViolatorSeenAgain_UpdateTimeandDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Application" />
       <item itemvalue="JUnit.All in birdnest" />
-      <item itemvalue="JUnit.MonitorTests" />
-      <item itemvalue="JUnit.MonitorTests.InNDZ_WhenInZone_True" />
+      <item itemvalue="JUnit.MonitorTests.AddNewViolator_WhenGetPilot_AddPilot" />
+      <item itemvalue="JUnit.MonitorTests.RemoveExpired_WhenTimeIsOverTen_RemoveViolator" />
+      <item itemvalue="JUnit.MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateDistance" />
+      <item itemvalue="JUnit.MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateTime" />
+      <item itemvalue="JUnit.MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateTimeandDistance" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.MonitorTests.InNDZ_WhenInZone_True" />
-        <item itemvalue="JUnit.MonitorTests" />
+        <item itemvalue="JUnit.MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateTimeandDistance" />
+        <item itemvalue="JUnit.MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateDistance" />
+        <item itemvalue="JUnit.MonitorTests.UpdateViolator_WhenViolatorSeenAgain_UpdateTime" />
+        <item itemvalue="JUnit.MonitorTests.AddNewViolator_WhenGetPilot_AddPilot" />
+        <item itemvalue="JUnit.MonitorTests.RemoveExpired_WhenTimeIsOverTen_RemoveViolator" />
       </list>
     </recent_temporary>
   </component>
@@ -132,5 +186,29 @@
       <updated>1673030562533</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/birdnest/application/MonitorTests.java</url>
+          <line>109</line>
+          <properties class="com.birdnest.application.MonitorTests" method="RemoveExpired_WhenTimeIsOverTen_RemoveViolator">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/birdnest/application/MonitorTests.java</url>
+          <line>67</line>
+          <properties class="com.birdnest.application.MonitorTests" method="UpdateViolator_WhenViolatorSeenAgain_UpdateTime">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

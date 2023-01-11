@@ -4,7 +4,6 @@ com/birdnest/application/endpoints/ViolatorEndpoint.class
 com/birdnest/application/Application.class
 com/birdnest/application/Data/Violator.class
 com/birdnest/application/Data/ViolatorReport.class
-com/birdnest/application/endpoints/helloreact/HelloReactEndpoint.class
 com/birdnest/application/Data/Report.class
 com/birdnest/application/BirdnestClient.class
 com/birdnest/application/Data/Capture.class

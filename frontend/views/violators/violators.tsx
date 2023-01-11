@@ -37,14 +37,20 @@ return () => { };
                   <VerticalLayout theme="spacing">
                     <h4>Drone details:</h4>
                     <HorizontalLayout theme="spacing">
-                      <TextField label='PositionX' value={item.drone.positionX} readonly/>
-                      <TextField label='PositionY' value={item.drone.positionY} readonly/>
-                      <TextField label='Altitude' value={item.drone.altitude} readonly/>
-                    </HorizontalLayout>
-                    <HorizontalLayout theme="spacing">
+                      <TextField label='SerialNumber' value={item.drone.serialNumber} readonly/>
                       <TextField label='Model' value={item.drone.model} readonly/>
                       <TextField label='Manufacturer' value={item.drone.manufacturer} readonly/>
                       <TextField label='Mac' value={item.drone.mac} readonly/>
+                    </HorizontalLayout>
+                    <HorizontalLayout theme="spacing">
+                      <TextField label='ipv4' value={item.drone.ipv4} readonly/>
+                      <TextField label='ipv6' value={item.drone.ipv6} readonly/>
+                      <TextField label='firmware' value={item.drone.firmware} readonly/>
+                    </HorizontalLayout>
+                    <HorizontalLayout theme="spacing">
+                      <TextField label='PositionX' value={item.drone.positionX} readonly/>
+                      <TextField label='PositionY' value={item.drone.positionY} readonly/>
+                      <TextField label='Altitude' value={item.drone.altitude} readonly/>
                     </HorizontalLayout>
                     <p>Last seen: {(item.interval / 60000).toFixed(0)} minutes ago</p>
                   </VerticalLayout>

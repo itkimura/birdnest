@@ -3,12 +3,15 @@ package com.birdnest.application;
 import com.birdnest.application.data.*;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+@Component
 public class BirdnestClientImpl implements BirdnestClient {
     private final HttpClient client;
     private final XmlMapper xmlMapper;
@@ -26,7 +29,6 @@ public class BirdnestClientImpl implements BirdnestClient {
                         .build();
         var response = this.client.send(request, HttpResponse.BodyHandlers.ofInputStream());
         var report = this.xmlMapper.readValue(response.body(), Report.class);
-
         return report;
     }
 

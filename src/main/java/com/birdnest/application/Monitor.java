@@ -1,6 +1,8 @@
 package com.birdnest.application;
 
 import com.birdnest.application.data.*;
+import lombok.Data;
+import lombok.Getter;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -27,8 +29,8 @@ public class Monitor{
     private Log log = LogFactory.getLog(Monitor.class);
 
 
-    public Monitor(){
-        this.client = new BirdnestClientImpl();
+    public Monitor(BirdnestClient client){
+        this.client = client;
         this.violators = new ConcurrentHashMap<String, Violator>();
         this.moniteringStartTime = LocalDateTime.now(ZoneId.of("UTC"));
         this.noPilot = new Pilot("Not Available", "Not Available", "Not Available",
@@ -45,44 +47,58 @@ public class Monitor{
         return true;
     }
 
-    public double calucurateDistance(Float positionX, Float positionY){
+    public double calculateDistance(Float positionX, Float positionY){
         var distance = Math.sqrt(((positionX - birdPositionX) * (positionX - birdPositionX))
                         + ((positionY - birdPositionY) * (positionY - birdPositionY)));
         return distance;
     }
 
-    public void removeExpired() {
-        for (Map.Entry<String, Violator> entry : this.violators.entrySet())
+    public void removeExpired(ConcurrentMap<String, Violator> violators){
+        for (Map.Entry<String, Violator> entry : violators.entrySet())
         {
             entry.getValue().setInterval();
             if (entry.getValue().getInterval() >= expireViolatorAfterMS)
-                this.violators.remove(entry.getKey());
+                violators.remove(entry.getKey());
         }
+    }
+
+
+    /**
+     * Add new pilot
+     */
+    public void addNewViolator(Drone drone, Capture capture, double distance) throws Exception{
+        Violator violator;
+        var pilot = client.getPilot(drone.serialNumber());
+        if (pilot == null)
+        {
+            pilot = this.noPilot;
+            this.log.warn("Cannot get pilot information for " + drone.serialNumber());
+        }
+        violator = new Violator(pilot, drone, capture, distance);
+        this.violators.put(drone.serialNumber(), violator);
+    }
+
+    /**
+     * when violator has been added
+     * 1.Update time
+     * 2.Update distance when the new distance is closer than before
+     */
+    public void updateViolator(Drone drone, Capture capture, double distance){
+        Violator violator;
+        violator = this.violators.get(drone.serialNumber());
+        violator.updateTime(capture);
+        if (isDroneInNDZ(distance))
+            if (violator.getDistance() > distance)
+                violator.updateDrone(drone, distance);
     }
     public void addViolator(Capture capture) throws Exception {
         for (Drone drone : capture.drones())
         {
-            Violator violator;
-            double distance = calucurateDistance(drone.positionX(), drone.positionY());
+            double distance = calculateDistance(drone.positionX(), drone.positionY());
             if (this.violators.containsKey(drone.serialNumber()))
-            {
-                violator = this.violators.get(drone.serialNumber());
-                violator.updateTime(capture);
-                if (isDroneInNDZ(distance))
-                    if (violator.getDistance() > distance)
-                        violator.updateDrone(drone, distance);
-            }
+                updateViolator(drone, capture, distance);
             else if (isDroneInNDZ(distance))
-            {
-                var pilot = client.getPilot(drone.serialNumber());
-                if (pilot == null)
-                {
-                    pilot = this.noPilot;
-                    this.log.warn("Cannot get pilot information for " + drone.serialNumber());
-                }
-                violator = new Violator(pilot, drone, capture, distance);
-                this.violators.put(drone.serialNumber(), violator);
-            }
+                addNewViolator(drone, capture, distance);
         }
     }
 
@@ -99,11 +115,10 @@ public class Monitor{
         {
            this.log.error("getReport request faild", ex);
         }
-        removeExpired();
+        removeExpired(this.violators);
     }
 
     public void printViolators(){
-        System.out.println("----Map-----");
         for (Map.Entry<String, Violator> entry : violators.entrySet()) {
             System.out.println(entry.getValue().toString());
         }
