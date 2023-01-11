@@ -84,7 +84,7 @@ public class MonitorTests {
     }
 
     @Test
-    void UpdateViolator_WhenViolatorSeenAgain_UpdateTimeandDistance() throws Exception {
+    void UpdateViolator_WhenViolatorSeenAgain_UpdateTimeAndDistance() throws Exception {
         Drone drone = new Drone("Test1234", "Test", "Test", "Test",
                 "Test", "Test", "Test", 250000.00f, 250000.00f, 5000.0f);
         Pilot pilot = new Pilot("Test", "Test", "Test", "Test", "Test", "Test");
