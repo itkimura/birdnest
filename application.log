@@ -5794,3 +5794,423 @@ Vaadin is running in DEVELOPMENT mode - do not use for production deployments.
 2023-01-12 11:40:14.075  INFO 7441 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=11193, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@67f2bd93, snapshotTimestamp=2023-01-12T09:40:12.529]]
 2023-01-12 11:40:16.087  INFO 7441 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=11195, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@799f4bcc, snapshotTimestamp=2023-01-12T09:40:14.530]]
 2023-01-12 11:40:18.079  INFO 7441 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=11197, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@4dab1a8e, snapshotTimestamp=2023-01-12T09:40:16.532]]
+2023-01-12 12:03:56.699  INFO 8169 --- [restartedMain] com.birdnest.application.Application     : Starting Application using Java 19.0.1 on Itoes-MBP with PID 8169 (/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/target/classes started by itoekimura in /Users/itoekimura/Code/BIRDNEST/hilla/birdnest)
+2023-01-12 12:03:56.700  INFO 8169 --- [restartedMain] com.birdnest.application.Application     : No active profile set, falling back to 1 default profile: "default"
+2023-01-12 12:03:56.741  INFO 8169 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-12 12:03:56.741  INFO 8169 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-12 12:03:57.426  INFO 8169 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-12 12:03:57.434  INFO 8169 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-12 12:03:57.434  INFO 8169 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-12 12:03:57.481  INFO 8169 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-12 12:03:57.481  INFO 8169 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 740 ms
+2023-01-12 12:03:57.574  INFO 8169 --- [restartedMain] c.v.f.s.VaadinServletContextInitializer  : Search for VaadinAppShell took 13 ms
+2023-01-12 12:03:57.847  INFO 8169 --- [restartedMain] c.v.f.s.VaadinServletContextInitializer  : Search for subclasses and classes with annotations took 240 ms
+2023-01-12 12:03:57.902  INFO 8169 --- [restartedMain] c.v.b.d.startup.DevModeStartupListener   : Starting dev-mode updaters in /Users/itoekimura/Code/BIRDNEST/hilla/birdnest folder.
+2023-01-12 12:03:57.920  INFO 8169 --- [restartedMain] c.v.f.s.f.s.FullDependenciesScanner      : Visited 11 classes. Took 9 ms.
+2023-01-12 12:03:58.412  INFO 8169 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-12 12:03:58.459  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] i.s.c.v3.ignore.CodegenIgnoreProcessor   : No .swagger-codegen-ignore file found.
+2023-01-12 12:03:58.474  INFO 8169 --- [restartedMain] c.v.f.s.DefaultDeploymentConfiguration   : 
+Vaadin is running in DEVELOPMENT mode - do not use for production deployments.
+2023-01-12 12:03:58.497  INFO 8169 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-12 12:03:58.507  INFO 8169 --- [restartedMain] com.birdnest.application.Application     : Started Application in 2.052 seconds (JVM running for 2.327)
+2023-01-12 12:03:58.580  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/com/birdnest/application/data/DroneModel.ts
+2023-01-12 12:03:58.592  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/com/birdnest/application/data/Drone.ts
+2023-01-12 12:03:58.598  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/com/birdnest/application/data/PilotModel.ts
+2023-01-12 12:03:58.604  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/com/birdnest/application/data/Pilot.ts
+2023-01-12 12:03:58.609  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/com/birdnest/application/data/ViolatorModel.ts
+2023-01-12 12:03:58.616  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/com/birdnest/application/data/Violator.ts
+2023-01-12 12:03:58.622  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/com/birdnest/application/data/ViolatorReportModel.ts
+2023-01-12 12:03:58.627  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/com/birdnest/application/data/ViolatorReport.ts
+2023-01-12 12:03:58.632  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/java/lang/RecordModel.ts
+2023-01-12 12:03:58.638  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/java/lang/Record.ts
+2023-01-12 12:03:58.663  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] io.swagger.codegen.v3.AbstractGenerator  : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/ViolatorEndpoint.ts
+2023-01-12 12:03:58.675  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] dev.hilla.generator.ClientAPIGenerator   : writing file /Users/itoekimura/Code/BIRDNEST/hilla/birdnest/frontend/generated/endpoints.ts
+2023-01-12 12:03:58.707  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] c.v.f.s.frontend.TaskUpdatePackages      : Skipping `npm install` because the frontend packages are already installed in the folder '/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/node_modules' and the hash in the file '/Users/itoekimura/Code/BIRDNEST/hilla/birdnest/node_modules/.vaadin/vaadin.json' is the same as in 'package.json'
+2023-01-12 12:03:58.707  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] c.v.f.s.frontend.TaskCopyFrontendFiles   : Copying frontend resources from jar files ...
+2023-01-12 12:03:58.718  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] c.v.f.s.frontend.TaskCopyFrontendFiles   : Visited 4 resources. Took 11 ms.
+2023-01-12 12:03:58.729  INFO 8169 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-12 12:03:58.729  INFO 8169 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-12 12:03:58.730  INFO 8169 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-12 12:03:58.735  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] c.v.b.devserver.AbstractDevServerRunner  : Starting Vite
+2023-01-12 12:03:58.790  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12617, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@503b1326, snapshotTimestamp=2023-01-12T10:03:57.051]]
+2023-01-12 12:04:00.520  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] c.v.b.devserver.AbstractDevServerRunner  : Running Vite to compile frontend resources. This may take a moment, please stand by...
+2023-01-12 12:04:00.570  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12619, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@277a3112, snapshotTimestamp=2023-01-12T10:03:59.053]]
+2023-01-12 12:04:01.460  INFO 8169 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2023-01-12 12:04:01.460  INFO 8169 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   VITE v3.2.4  ready in 887 ms
+2023-01-12 12:04:01.460  INFO 8169 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2023-01-12 12:04:01.460  INFO 8169 --- [ForkJoinPool.commonPool-worker-1] c.v.b.devserver.AbstractDevServerRunner  : Started Vite. Time: 2724ms
+2023-01-12 12:04:01.460  INFO 8169 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   :   ➜  Local:   http://127.0.0.1:56237/VAADIN/
+2023-01-12 12:04:02.575  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12621, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@3e8691b1, snapshotTimestamp=2023-01-12T10:04:01.055]]
+2023-01-12 12:04:04.563  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12623, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@60bf674, snapshotTimestamp=2023-01-12T10:04:03.056]]
+2023-01-12 12:04:05.587  INFO 8169 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : 
+2023-01-12 12:04:05.588  INFO 8169 --- [dev-server-output] c.v.b.devserver.DevServerOutputTracker   : [TypeScript] Found 0 errors. Watching for file changes.
+2023-01-12 12:04:06.574  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12625, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@629effcb, snapshotTimestamp=2023-01-12T10:04:05.058]]
+2023-01-12 12:04:08.567  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12627, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@141ab02b, snapshotTimestamp=2023-01-12T10:04:07.059]]
+2023-01-12 12:04:10.570  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12629, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@1e1bb000, snapshotTimestamp=2023-01-12T10:04:09.060]]
+2023-01-12 12:04:12.565  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12631, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@47fa4de1, snapshotTimestamp=2023-01-12T10:04:11.062]]
+2023-01-12 12:04:14.563  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12633, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@528f9272, snapshotTimestamp=2023-01-12T10:04:13.063]]
+2023-01-12 12:04:16.575  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12635, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@1355fbe0, snapshotTimestamp=2023-01-12T10:04:15.064]]
+2023-01-12 12:04:18.566  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12637, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@508dc23a, snapshotTimestamp=2023-01-12T10:04:17.065]]
+2023-01-12 12:04:20.573  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12639, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@450d088f, snapshotTimestamp=2023-01-12T10:04:19.066]]
+2023-01-12 12:04:22.567  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12641, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@6bbf0e5e, snapshotTimestamp=2023-01-12T10:04:21.067]]
+2023-01-12 12:04:24.572  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12643, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@57097232, snapshotTimestamp=2023-01-12T10:04:23.069]]
+2023-01-12 12:04:26.572  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12645, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@692bf6fb, snapshotTimestamp=2023-01-12T10:04:25.071]]
+2023-01-12 12:04:28.565  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12647, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@44cfd221, snapshotTimestamp=2023-01-12T10:04:27.072]]
+2023-01-12 12:04:30.646  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12649, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@5791e918, snapshotTimestamp=2023-01-12T10:04:29.073]]
+2023-01-12 12:04:32.569  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12651, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@4b15893a, snapshotTimestamp=2023-01-12T10:04:31.075]]
+2023-01-12 12:04:34.567  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12653, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@7d3f228d, snapshotTimestamp=2023-01-12T10:04:33.077]]
+2023-01-12 12:04:36.558  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12655, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@475ba9d1, snapshotTimestamp=2023-01-12T10:04:35.079]]
+2023-01-12 12:04:38.573  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12657, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@1fda510b, snapshotTimestamp=2023-01-12T10:04:37.080]]
+2023-01-12 12:04:40.572 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:04:42.568 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:04:44.572 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:04:46.569 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:04:48.561 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:04:50.573 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:04:52.564 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:04:54.573 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:04:56.571 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:04:58.572 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:05:00.575 ERROR 8169 --- [scheduling-1] com.birdnest.application.Monitor         : getReport request faild
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:734) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:600) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:30) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1083) ~[jackson-core-2.13.4.jar:2.13.4]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666) ~[jackson-databind-2.13.4.2.jar:2.13.4.2]
+	at com.birdnest.application.BirdnestClientImpl.getReport(BirdnestClientImpl.java:31) ~[classes/:na]
+	at com.birdnest.application.Monitor.updateViolators(Monitor.java:109) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:666) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2148) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1180) ~[woodstox-core-6.4.0.jar:6.4.0]
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:729) ~[jackson-dataformat-xml-2.14.0.jar:2.14.0]
+	... 16 common frames omitted
+
+2023-01-12 12:05:02.652  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12681, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@10ba090c, snapshotTimestamp=2023-01-12T10:05:01.121]]
+2023-01-12 12:05:04.572  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12683, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@74ac6529, snapshotTimestamp=2023-01-12T10:05:03.124]]
+2023-01-12 12:05:06.571  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12685, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@287db63f, snapshotTimestamp=2023-01-12T10:05:05.125]]
+2023-01-12 12:05:08.570  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12687, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@78ea5b9e, snapshotTimestamp=2023-01-12T10:05:07.127]]
+2023-01-12 12:05:10.562  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12689, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@38d8dfe6, snapshotTimestamp=2023-01-12T10:05:09.130]]
+2023-01-12 12:05:12.576  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12691, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@2fca70f9, snapshotTimestamp=2023-01-12T10:05:11.132]]
+2023-01-12 12:05:14.571  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12693, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@6ac3e771, snapshotTimestamp=2023-01-12T10:05:13.133]]
+2023-01-12 12:05:16.564  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12695, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@405f771c, snapshotTimestamp=2023-01-12T10:05:15.135]]
+2023-01-12 12:05:18.560  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12697, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@3e86a71e, snapshotTimestamp=2023-01-12T10:05:17.136]]
+2023-01-12 12:05:20.561  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12699, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@4237558f, snapshotTimestamp=2023-01-12T10:05:19.137]]
+2023-01-12 12:05:22.554  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12701, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@37badad7, snapshotTimestamp=2023-01-12T10:05:21.138]]
+2023-01-12 12:05:24.569  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12703, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@c66bcab, snapshotTimestamp=2023-01-12T10:05:23.140]]
+2023-01-12 12:05:26.559  INFO 8169 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12705, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@7d3446e, snapshotTimestamp=2023-01-12T10:05:25.142]]
+2023-01-12 12:06:03.322  INFO 8244 --- [main] com.birdnest.application.MonitorTests    : Starting MonitorTests using Java 19.0.1 on Itoes-MBP with PID 8244 (started by itoekimura in /Users/itoekimura/Code/BIRDNEST/hilla/birdnest)
+2023-01-12 12:06:03.323  INFO 8244 --- [main] com.birdnest.application.MonitorTests    : No active profile set, falling back to 1 default profile: "default"
+2023-01-12 12:06:05.381  INFO 8244 --- [main] com.birdnest.application.MonitorTests    : Started MonitorTests in 2.319 seconds (JVM running for 3.47)
+2023-01-12 12:06:05.743  INFO 8244 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12745, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@1485b843, snapshotTimestamp=2023-01-12T10:06:05.177]]
+2023-01-12 12:06:05.900  WARN 8244 --- [main] com.birdnest.application.Monitor         : Cannot get pilot information for Test1234
+2023-01-12 12:10:12.374  INFO 8263 --- [main] com.birdnest.application.MonitorTests    : Starting MonitorTests using Java 19.0.1 on Itoes-MBP with PID 8263 (started by itoekimura in /Users/itoekimura/Code/BIRDNEST/hilla/birdnest)
+2023-01-12 12:10:12.375  INFO 8263 --- [main] com.birdnest.application.MonitorTests    : No active profile set, falling back to 1 default profile: "default"
+2023-01-12 12:10:14.489  INFO 8263 --- [main] com.birdnest.application.MonitorTests    : Started MonitorTests in 2.351 seconds (JVM running for 3.421)
+2023-01-12 12:10:14.832  INFO 8263 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=12993, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@1821c5a2, snapshotTimestamp=2023-01-12T10:10:13.390]]
+2023-01-12 12:11:44.053  INFO 8273 --- [main] com.birdnest.application.MonitorTests    : Starting MonitorTests using Java 19.0.1 on Itoes-MBP with PID 8273 (started by itoekimura in /Users/itoekimura/Code/BIRDNEST/hilla/birdnest)
+2023-01-12 12:11:44.054  INFO 8273 --- [main] com.birdnest.application.MonitorTests    : No active profile set, falling back to 1 default profile: "default"
+2023-01-12 12:11:46.092  INFO 8273 --- [main] com.birdnest.application.MonitorTests    : Started MonitorTests in 2.281 seconds (JVM running for 3.443)
+2023-01-12 12:11:46.417  INFO 8273 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=13086, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@10ad5d0e, snapshotTimestamp=2023-01-12T10:11:45.513]]
+2023-01-12 12:12:19.675  INFO 8277 --- [main] com.birdnest.application.MonitorTests    : Starting MonitorTests using Java 19.0.1 on Itoes-MBP with PID 8277 (started by itoekimura in /Users/itoekimura/Code/BIRDNEST/hilla/birdnest)
+2023-01-12 12:12:19.684  INFO 8277 --- [main] com.birdnest.application.MonitorTests    : No active profile set, falling back to 1 default profile: "default"
+2023-01-12 12:12:21.840  INFO 8277 --- [main] com.birdnest.application.MonitorTests    : Started MonitorTests in 2.412 seconds (JVM running for 3.442)
+2023-01-12 12:12:22.164  INFO 8277 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=13122, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@2658ad08, snapshotTimestamp=2023-01-12T10:12:21.536]]
+2023-01-12 12:12:52.830  INFO 8281 --- [main] com.birdnest.application.MonitorTests    : Starting MonitorTests using Java 19.0.1 on Itoes-MBP with PID 8281 (started by itoekimura in /Users/itoekimura/Code/BIRDNEST/hilla/birdnest)
+2023-01-12 12:12:52.834  INFO 8281 --- [main] com.birdnest.application.MonitorTests    : No active profile set, falling back to 1 default profile: "default"
+2023-01-12 12:12:54.973  INFO 8281 --- [main] com.birdnest.application.MonitorTests    : Started MonitorTests in 2.411 seconds (JVM running for 3.426)
+2023-01-12 12:12:55.311  INFO 8281 --- [scheduling-1] com.birdnest.application.Monitor         : Received report: Report[deviceInformation=DeviceInformation[deviceId=GUARDB1RD, listenRange=500000.0, deviceStarted=2023-01-12T06:33:39.620Z, uptimeSeconds=13154, updateIntervalMs=2000], capture=Capture[drones=[Lcom.birdnest.application.data.Drone;@6c5b1fea, snapshotTimestamp=2023-01-12T10:12:53.559]]
