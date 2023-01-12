@@ -10,7 +10,7 @@ export default function AboutView() {
             <h2>author: Itoe Kimura</h2>
             <p>Hello World! I am a student at Hive Helsinki.</p>
             <p>I am currently focusing on algorithms, <span className={'bold'}>Java, C, Python, Linux, and networks</span></p>
-            <p>My Learning interests: Data engineering, Data architecture, Python, SQL, AWS, Azure </p>
+            <p>My Learning interests: back-end software development, cloud architecture (AWS, Azure) and data engineering.</p>
             <HorizontalLayout theme="spacing">
                 <a href="">
                     <img style={{ height: '30px' }} src="images/github.png"/>

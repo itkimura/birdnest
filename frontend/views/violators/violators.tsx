@@ -29,6 +29,11 @@ return () => { };
   }, []);
   return (
     <VerticalLayout className={'violatorList'}>
+          <div className={'violatorFooter'}>
+               <small className={'time'}>Monitoring stated date: {getLocaleDate(violatorReport.monitoringStartDate)}</small>
+               <small className={'time'}>Last updated: {getLocaleDate(violatorReport.lastUpdated)}</small>
+               <p><small>*The list will be automatically renewed every one minute. Please click to see violator details in the list. Time zone is UTC.</small></p>
+           </div>
          <Grid  items={violatorReport.violators} theme='wrap-cell-content row-stripes'
           //all-rows-visible
           detailsOpenedItems={detailsOpenedItem}
@@ -86,11 +91,6 @@ return () => { };
                }
            />
         </Grid>
-        <div className={'violatorFooter'}>
-            <small className={'time'}>Monitoring stated date: {getLocaleDate(violatorReport.monitoringStartDate)}</small>
-            <small className={'time'}>Last updated: {getLocaleDate(violatorReport.lastUpdated)}</small>
-            <p><small>*The list will be automatically renewed every one minute. Please click to see violator details in the list. Time zone is UTC.</small></p>
-        </div>
     </VerticalLayout>
     );
   }
