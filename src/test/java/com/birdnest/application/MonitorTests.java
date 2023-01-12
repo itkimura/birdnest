@@ -33,6 +33,13 @@ public class MonitorTests {
         var distance = sut.calculateDistance(350000.00f, 250000.00f);
         assertTrue((100000 == distance), "Should return 100m");
     }
+
+    Drone[] createTestDroneArray(){
+        Drone drone = new Drone("Test1234", "Test", "Test", "Test",
+                "Test", "Test", "Test", 250000.00f, 250000.00f, 5000.0f);
+        Drone[] drones = new Drone[1];
+        drones[0] = drone;
+    }
     @Test
     void AddNewViolator_WhenCannotGetPilot_SetPilotNotAvailable() throws Exception {
         Drone drone = new Drone("Test1234", "Test", "Test", "Test",
