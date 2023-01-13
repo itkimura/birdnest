@@ -1,5 +1,5 @@
 # birdnest application
-My solution build with **Java** to **Reaktor <a href="https://assignments.reaktor.com/birdnest/">pre-assignment</a>** for Developer trainee, summer 2023.
+My solution build with **Java** to **Reaktor <a href="https://assignments.reaktor.com/birdnest/">pre-assignment</a>** for Developer trainee, summer 2023. This is a web application which lists all the pilots who recently violated the NDZ perimeter.
 
 Project hosted:
 
@@ -8,10 +8,10 @@ Project hosted:
 
 **Back-end: Java (Spring Boot)**
 
-Poll drones api every two seccond and parse received data. If the drone is in NDZ(no drone zone), poll pilot information and add the violator lists.
+Poll drones api every two second and parse received data. If drones are in NDZ(no drone zone), poll pilot information and add to the violator list.
 
 **Front-end: Hilla (React, TypeScript)**
-Hilla is an open source framework that integrates a Spring Boot Java back end with a reactive TypeScript front end. It helps my application faster with type-safe server communication, included UI components.
+Hilla is an open source framework that integrates a Spring Boot Java back end with a React based front end. 
 ![birdnest - workflow](https://user-images.githubusercontent.com/61685238/212367878-e78627b9-1309-4238-b868-0b1a50a9a9b8.jpg)
 
 You can build the application with
@@ -24,4 +24,4 @@ mvn package -Pproduction
 - Application.log in root
 - Created function tests for monitor service
 - CI workflow in GitHub Actions
-- GitHub Integration (Heroku Github Deploy)
+- GitHub Integration (Heroku GitHub Deploy)
