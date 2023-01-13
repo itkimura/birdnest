@@ -1,0 +1,36 @@
+.classpath
+.factorypath
+*.project
+*.settings
+
+#log
+*.log
+*.gz
+
+# Mac
+*.DS_Store
+
+# Intellij Idea files
+.idea
+*.iml
+
+# VS Code
+.vscode
+
+# Java files
+*pom.xml.versionsBackup
+target/*
+
+# NodeJS files
+**/dist
+node_modules
+
+# Testing files
+.coverage
+
+# Generated code
+packages/ts/*/*.d.ts
+packages/ts/*/*.d.ts.map
+packages/ts/*/*.js
+packages/ts/*/*.js.map
+packages/ts/*/.coverage
