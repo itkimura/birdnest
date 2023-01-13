@@ -1,9 +1,9 @@
 package com.birdnest.application;
 
-import com.birdnest.application.data.*;
+import com.birdnest.application.data.Pilot;
+import com.birdnest.application.data.Report;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.net.URI;
@@ -25,8 +25,8 @@ public class BirdnestClientImpl implements BirdnestClient {
 
     public Report getReport() throws Exception {
         var request = HttpRequest.newBuilder()
-                        .uri(URI.create("http://assignments.reaktor.com/birdnest/drones"))
-                        .build();
+                .uri(URI.create("http://assignments.reaktor.com/birdnest/drones"))
+                .build();
         var response = this.client.send(request, HttpResponse.BodyHandlers.ofInputStream());
         var report = this.xmlMapper.readValue(response.body(), Report.class);
         return report;

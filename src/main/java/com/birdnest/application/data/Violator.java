@@ -3,9 +3,11 @@ package com.birdnest.application.data;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+
 @Data
 @Getter
 @Setter
@@ -23,7 +25,7 @@ public class Violator {
     ZoneId zone;
 
 
-    public Violator(Pilot pilot, Drone drone, Capture capture, double distance){
+    public Violator(Pilot pilot, Drone drone, Capture capture, double distance) {
         this.zone = ZoneId.of("UTC");
         this.name = pilot.firstName() + " " + pilot.lastName();
         this.email = pilot.email();
@@ -41,27 +43,27 @@ public class Violator {
         return (date);
     }
 
-    public void setInterval(){
-        this.interval = dateToLong(LocalDateTime.now(zone))- dateToLong(this.time);
+    public void setInterval() {
+        this.interval = dateToLong(LocalDateTime.now(zone)) - dateToLong(this.time);
     }
 
-    public void updateTime(Capture capture){
+    public void updateTime(Capture capture) {
         this.time = capture.snapshotTimestamp();
         setInterval();
     }
 
-    public void updateDrone(Drone drone, double distance){
+    public void updateDrone(Drone drone, double distance) {
         this.drone = drone;
         this.distance = distance;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return ("[" + this.time.toString() + " "
                 + this.name + " "
                 + this.email + " "
                 + this.phone + " "
                 + this.interval + " "
-                + String.valueOf(this.distance) +"]" );
+                + String.valueOf(this.distance) + "]");
     }
 }
