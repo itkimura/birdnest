@@ -12,7 +12,7 @@ export default function AboutView() {
             <p>I am currently focusing on algorithms, <span className={'bold'}>Java, C, Python, Linux, and networks</span></p>
             <p>My Learning interests: back-end software development, cloud architecture (AWS, Azure) and data engineering.</p>
             <HorizontalLayout theme="spacing">
-                <a href="">
+                <a href="https://github.com/itkimura/birdnest">
                     <img style={{ height: '30px' }} src="images/github.png"/>
                 </a>
                 <a href="https://www.linkedin.com/in/itkimura/">
