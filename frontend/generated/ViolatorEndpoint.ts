@@ -1,7 +1,7 @@
 /**
  * This module is generated from ViolatorEndpoint.java
  * All changes to this file are overridden. Please consider to make changes in the corresponding Java file if necessary.
- * @see {@link file:///Users/itoekimura/Code/BIRDNEST/hilla/birdnest/src/main/java/com/birdnest/application/endpoints/ViolatorEndpoint.java}
+ * @see {@link file:///Users/itoekimura/Code/BIRDNEST/hilla/test/src/main/java/com/birdnest/application/endpoints/ViolatorEndpoint.java}
  * @module ViolatorEndpoint
  */
 

@@ -10,5 +10,12 @@ jobs:
         with:
           java-version: '19'
           distribution: 'adopt'
-      - name: Build  with Maven
+      - name: Build with Maven
         run: mvn package -Pproduction
+      - name: Install Heroku java plugin
+        run: heroku plugins:install java
+      - name: Deploy to Heroku
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
+        run: heroku deploy:jar target/birdnest-1.0-SNAPSHOT.jar --app itkimura-birdnest

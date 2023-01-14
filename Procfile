@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar target/birdnest-1.0-SNAPSHOT.jar --app itkimura-birdnest
