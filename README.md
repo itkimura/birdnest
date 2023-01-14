@@ -1,7 +1,7 @@
 # birdnest application
 My solution build with **Java** to **Reaktor <a href="https://assignments.reaktor.com/birdnest/">pre-assignment</a>** for Developer trainee, summer 2023. This is a web application which lists all the pilots who recently violated the NDZ perimeter.
 
-Project hosted:
+Project hosted: **<a href="https://itkimura-birdnest.herokuapp.com/">https://itkimura-birdnest.herokuapp.com/</a>**
 
 <img width="1000" alt="Screenshot 2023-01-13 at 18 18 19" src="https://user-images.githubusercontent.com/61685238/212367985-295e83cb-a078-422d-b3bf-41aa48b20bdb.png">
 
@@ -23,5 +23,4 @@ mvn package -Pproduction
 
 - Application.log in root
 - Created function tests for monitor service
-- CI workflow in GitHub Actions
-- GitHub Integration (Heroku GitHub Deploy)
+- CI/CD workflow to Heroku in GitHub Actions
